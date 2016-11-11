@@ -1,0 +1,43 @@
+//
+//  JRChatPrefixHeader.pch
+//  JRChatDemo
+//
+//  Created by 谢建荣 on 16/10/13.
+//  Copyright © 2016年 Ping An Health Insurance Company of China. All rights reserved.
+//
+
+#ifndef JRChatPrefixHeader_pch
+#define JRChatPrefixHeader_pch
+
+#ifdef __OBJC__
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width //屏幕宽度
+
+#define kEdgeInsetsTextWidth   20.0f   //文本消息内容内边距宽度
+#define kEdgeInsetsTextHeight  20.0f   //文本消息内容内边距高度
+#define kEdgeInsetsImageWidth  12.0f   //图片消息内容内边距宽度
+#define kEdgeInsetsImageHeight 12.0f   //图片消息内容内边距高度
+
+#define kIconWH                     40.0f  //头像的宽和高
+#define kInsetsBetweenIconAndScreen 10.0f  //头像距离左边的距离
+#define kInsetsBetweenIconAndBody   5.0f   //头像距离左边的距离
+
+#define kImageMaxWidth   135.0f  //图片消息内容的最大宽度
+#define kImageMaxHeight  135.0f  //图片消息内容的最大高度
+
+
+//时间格式
+#define KDateFormate @"yyyy-MM-dd HH:mm:ss"
+//时间戳出现时间间隔
+#define kTimeInterval 120
+
+#import "UILabel+Additions.h"
+#import "UIView+FrameLayout.h"
+#import "UIImage+Additions.h"
+#import "UIView+Date.h"
+#import "NSDate+Addition.h"
+#import "UITableView+ScrollToBottom.h"
+
+#endif
+
+#endif /* JRChatPrefixHeader_pch */
